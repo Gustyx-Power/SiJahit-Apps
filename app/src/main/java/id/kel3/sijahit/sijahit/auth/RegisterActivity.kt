@@ -14,6 +14,7 @@ class RegisterActivity : AppCompatActivity() {
     private lateinit var email: EditText
     private lateinit var password: EditText
     private lateinit var register: Button
+    private lateinit var back: ImageButton
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -23,6 +24,7 @@ class RegisterActivity : AppCompatActivity() {
         email = findViewById(R.id.etEmail)
         password = findViewById(R.id.etPassword)
         register = findViewById(R.id.btnRegister)
+        back = findViewById(R.id.btnBack)
 
         register.setOnClickListener {
             val emailText = email.text.toString()
@@ -34,8 +36,12 @@ class RegisterActivity : AppCompatActivity() {
                     finish()
                 }
                 .addOnFailureListener {
-                    Toast.makeText(this, getString(R.string.fail_register), Toast.LENGTH_SHORT).show()
+                    Toast.makeText(this, getString(R.string.fail_register), Toast.LENGTH_SHORT)
+                        .show()
                 }
+        }
+        back.setOnClickListener {
+            startActivity(Intent(this, LoginActivity::class.java))
         }
     }
 }
