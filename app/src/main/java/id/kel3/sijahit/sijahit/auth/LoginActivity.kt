@@ -25,7 +25,7 @@ class LoginActivity : AppCompatActivity() {
         email = findViewById(R.id.etEmail)
         password = findViewById(R.id.etPassword)
         login = findViewById(R.id.btnLogin)
-        register = findViewById(R.id.tvRegister)
+        register = findViewById(R.id.tvDaftarSekarang)
 
         login.setOnClickListener {
             val emailText = email.text.toString()
