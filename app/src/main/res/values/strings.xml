@@ -3,4 +3,15 @@
     <string name="loginfail">Gagal login</string>
     <string name="account">dini@sijahit.com</string>
     <string name="fail_register">Gagal daftar</string>
+    <string name="username">Username</string>
+    <string name="email">Email</string>
+    <string name="login">Masuk Sekarang</string>
+    <string name="passwd">Kata Sandi</string>
+    <string name="no_any_account">Belum Mempunyai akun?</string>
+    <string name="title">Hai,\nSelamat Datang Di Sijahit!</string>
+    <string name="text_register">Daftar Sekarang</string>
+    <string name="forget_passwd">Lupa Kata Sandi? / Atur Ulang</string>
+    <string name="back">Kembali</string>
+    <string name="register_bt">Daftar Sekarang</string>
+    <string name="register_text">Daftar Akun Sijahit</string>
 </resources>
