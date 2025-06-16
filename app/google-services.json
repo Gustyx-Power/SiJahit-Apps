@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "537976322583",
+    "project_id": "sijahit-apps",
+    "storage_bucket": "sijahit-apps.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:537976322583:android:f1177467a4f28a09437a52",
+        "android_client_info": {
+          "package_name": "id.kel3.sijahit"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBtgoRKudi_WO-1s92Tw9Bgdx1RLcugYEg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:537976322583:android:11731549ae7d5659437a52",
+        "android_client_info": {
+          "package_name": "id.kel3.sijahit.sijahit"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBtgoRKudi_WO-1s92Tw9Bgdx1RLcugYEg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
