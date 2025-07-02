@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">sijahit</string>
+    <string name="app_name">Si-Jahit</string>
     <string name="loginfail">Gagal login</string>
     <string name="account">dini@sijahit.com</string>
     <string name="fail_register">Gagal daftar</string>
@@ -14,4 +14,6 @@
     <string name="back">Kembali</string>
     <string name="register_bt">Daftar Sekarang</string>
     <string name="register_text">Daftar Akun Sijahit</string>
+    <string name="or">Atau</string>
+    <string name="login_with_google">Masuk Dengan Akun Google</string>
 </resources>
