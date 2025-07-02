@@ -6,15 +6,16 @@
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@mipmap/logo"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@mipmap/logo"
         android:supportsRtl="true"
         android:theme="@style/Theme.Sijahit"
         tools:targetApi="31" >
 
-        <!-- Launcher Activity (Login sementara) -->
-        <activity android:name=".auth.LoginActivity"
+        <!-- Launcher Activity -->
+        <activity
+            android:name=".auth.SplashActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -22,14 +23,21 @@
             </intent-filter>
         </activity>
 
+        <!-- Login Activity -->
+        <activity
+            android:name=".auth.LoginActivity" />
+
         <!-- Register Activity -->
-        <activity android:name=".auth.RegisterActivity" />
+        <activity
+            android:name=".auth.RegisterActivity" />
 
         <!-- Admin Home -->
-        <activity android:name=".admin.AdminHomeActivity" />
+        <activity
+            android:name=".admin.AdminHomeActivity" />
 
         <!-- User Home -->
-        <activity android:name=".user.UserHomeActivity" />
+        <activity
+            android:name=".user.UserHomeActivity" />
 
     </application>
 
