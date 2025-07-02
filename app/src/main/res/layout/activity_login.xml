@@ -2,6 +2,7 @@
 <ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fillViewport="true"
@@ -17,13 +18,23 @@
         android:paddingTop="40dp"
         android:paddingBottom="24dp">
 
-        <!-- Judul -->
+        <ImageView
+            android:id="@+id/ivLogo"
+            android:layout_width="128dp"
+            android:contentDescription="@string/app_name"
+            android:layout_height="128dp"
+            android:src="@drawable/transparent_logo"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="8dp" />
 
-        <!-- Info Daftar -->
+
         <TextView
             android:id="@+id/tvWelcome"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
             android:lineSpacingExtra="4dp"
             android:text="@string/title"
             android:textColor="#000000"
@@ -32,7 +43,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toBottomOf="@id/ivLogo" />
 
         <TextView
             android:id="@+id/tvBelumPunya"
@@ -123,12 +134,13 @@
             app:layout_constraintTop_toBottomOf="@id/etPassword"
             app:layout_constraintStart_toStartOf="parent" />
 
-        <!-- Tombol Login -->
+
+        <!-- Tombol Login dengan Google -->
         <Button
             android:id="@+id/btnLogin"
             android:layout_width="0dp"
             android:layout_height="48dp"
-            android:layout_marginTop="36dp"
+            android:layout_marginTop="16dp"
             android:backgroundTint="#2563EB"
             android:text="@string/login"
             android:textColor="@android:color/white"
@@ -138,6 +150,34 @@
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/tvLupaPassword" />
+
+
+        <TextView
+            android:id="@+id/tvAtau"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/or"
+            android:textSize="16sp"
+            android:textColor="#6B7280"
+            android:layout_marginTop="16dp"
+            app:layout_constraintTop_toBottomOf="@id/btnLogin"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <ImageButton
+            android:id="@+id/llGoogleLogin"
+            android:layout_width="389dp"
+            android:layout_height="73dp"
+            android:layout_marginTop="12dp"
+            android:adjustViewBounds="true"
+            android:background="@color/white"
+            android:contentDescription="@string/login_with_google"
+            android:padding="8dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/google"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvAtau" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>
