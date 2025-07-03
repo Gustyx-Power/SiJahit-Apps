@@ -1,29 +1,11 @@
 {
   "project_info": {
     "project_number": "537976322583",
+    "firebase_url": "https://sijahit-apps-default-rtdb.asia-southeast1.firebasedatabase.app",
     "project_id": "sijahit-apps",
     "storage_bucket": "sijahit-apps.firebasestorage.app"
   },
   "client": [
-    {
-      "client_info": {
-        "mobilesdk_app_id": "1:537976322583:android:f1177467a4f28a09437a52",
-        "android_client_info": {
-          "package_name": "id.kel3.sijahit"
-        }
-      },
-      "oauth_client": [],
-      "api_key": [
-        {
-          "current_key": "AIzaSyBtgoRKudi_WO-1s92Tw9Bgdx1RLcugYEg"
-        }
-      ],
-      "services": {
-        "appinvite_service": {
-          "other_platform_oauth_client": []
-        }
-      }
-    },
     {
       "client_info": {
         "mobilesdk_app_id": "1:537976322583:android:11731549ae7d5659437a52",
@@ -31,7 +13,20 @@
           "package_name": "id.kel3.sijahit.sijahit"
         }
       },
-      "oauth_client": [],
+      "oauth_client": [
+        {
+          "client_id": "537976322583-ek5nj6mre1dj9scl1ev4upgqi30formk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "id.kel3.sijahit.sijahit",
+            "certificate_hash": "e5c1347016c08f5b7c1339d498f03eb6dddfbc12"
+          }
+        },
+        {
+          "client_id": "537976322583-af508c79hc0r7abrh5kmcvvqs5ofluv2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
       "api_key": [
         {
           "current_key": "AIzaSyBtgoRKudi_WO-1s92Tw9Bgdx1RLcugYEg"
@@ -39,7 +34,12 @@
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": []
+          "other_platform_oauth_client": [
+            {
+              "client_id": "537976322583-af508c79hc0r7abrh5kmcvvqs5ofluv2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
         }
       }
     }
