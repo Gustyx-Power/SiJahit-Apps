@@ -16,4 +16,5 @@
     <string name="register_text">Daftar Akun Sijahit</string>
     <string name="or">Atau</string>
     <string name="login_with_google">Masuk Dengan Akun Google</string>
+    <string name="default_web_client_id">537976322583-af508c79hc0r7abrh5kmcvvqs5ofluv2.apps.googleusercontent.com</string>
 </resources>
