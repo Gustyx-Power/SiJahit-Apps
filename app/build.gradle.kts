@@ -41,20 +41,29 @@ android {
     }
 
     composeOptions {
-        kotlinCompilerExtensionVersion = libs.versions.compose.get()
+        kotlinCompilerExtensionVersion = libs.versions.kotlinCompilerExtension.get()
     }
 }
 
 dependencies {
-
+    implementation(libs.androidx.activity.compose)
+    implementation(libs.androidx.compose.ui)
+    implementation(libs.androidx.compose.ui.tooling.preview)
+    implementation(libs.androidx.compose.material3)
+    implementation(libs.androidx.navigation.compose)
+    implementation(libs.androidx.lifecycle.runtime.compose)
+    implementation(libs.androidx.foundation.android)
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
     implementation(libs.firebase.auth)
     implementation(libs.google.auth)
     implementation(libs.firebase.database.ktx)
+    implementation(platform(libs.compose.bom))
+    implementation(libs.androidx.foundation.android)
+    implementation(libs.material.icons.extended)
     testImplementation(libs.junit)
-    debugImplementation("androidx.compose.ui:ui-tooling:1.6.4")
+    debugImplementation(libs.androidx.ui.tooling)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
 }
