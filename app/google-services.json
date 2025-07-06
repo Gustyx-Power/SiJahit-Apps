@@ -15,6 +15,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "537976322583-e3fmin4q2rdof7fb93m0j52bapc21r1f.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "id.kel3.sijahit.sijahit",
+            "certificate_hash": "427c61988d8e896cd7718ccae538dbc588cc7073"
+          }
+        },
+        {
           "client_id": "537976322583-ek5nj6mre1dj9scl1ev4upgqi30formk.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
