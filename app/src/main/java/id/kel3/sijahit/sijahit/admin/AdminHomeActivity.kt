@@ -1,15 +1,22 @@
 package id.kel3.sijahit.sijahit.admin
 
 import android.os.Bundle
-import androidx.appcompat.app.AppCompatActivity
-import id.kel3.sijahit.sijahit.R
+import androidx.activity.ComponentActivity
+import androidx.activity.compose.setContent
+import androidx.compose.material3.*
+import androidx.compose.runtime.*
+import id.kel3.sijahit.sijahit.admin.ui.AdminHomeScreen
+import id.kel3.sijahit.sijahit.ui.theme.SiJahitTheme
 
-class AdminHomeActivity : AppCompatActivity() {
+class AdminHomeActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_admin_home)
-
-        // TODO: Di sini nanti bisa tambahkan logika menampilkan data realtime (saldo, pesanan, dsb)
-        // Untuk sekarang cukup memunculkan layout AdminHome
+        setContent {
+            SiJahitTheme {
+                Surface(color = MaterialTheme.colorScheme.background) {
+                    AdminHomeScreen()
+                }
+            }
+        }
     }
 }
