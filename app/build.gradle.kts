@@ -2,6 +2,7 @@ plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
     alias(libs.plugins.google.services)
+    alias(libs.plugins.kotlin.compose)
 }
 
 android {
@@ -34,6 +35,14 @@ android {
     kotlinOptions {
         jvmTarget = "11"
     }
+
+    buildFeatures {
+        compose = true
+    }
+
+    composeOptions {
+        kotlinCompilerExtensionVersion = libs.versions.compose.get()
+    }
 }
 
 dependencies {
@@ -45,6 +54,7 @@ dependencies {
     implementation(libs.google.auth)
     implementation(libs.firebase.database.ktx)
     testImplementation(libs.junit)
+    debugImplementation("androidx.compose.ui:ui-tooling:1.6.4")
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
 }
