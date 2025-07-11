@@ -1,5 +1,6 @@
 package id.kel3.sijahit.sijahit.auth
 
+import id.kel3.sijahit.sijahit.user.UserHomeActivity
 import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
@@ -10,7 +11,6 @@ import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.FirebaseDatabase
 import id.kel3.sijahit.sijahit.R
 import id.kel3.sijahit.sijahit.admin.AdminHomeActivity
-import id.kel3.sijahit.sijahit.user.UserHomeActivity
 
 @SuppressLint("CustomSplashScreen")
 class SplashActivity : AppCompatActivity() {

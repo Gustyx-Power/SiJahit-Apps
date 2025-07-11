@@ -1,5 +1,6 @@
 package id.kel3.sijahit.sijahit.auth
 
+import id.kel3.sijahit.sijahit.user.UserHomeActivity
 import android.content.Intent
 import android.os.Bundle
 import android.util.Log
@@ -18,7 +19,7 @@ import com.google.firebase.auth.GoogleAuthProvider
 import com.google.firebase.database.FirebaseDatabase
 import id.kel3.sijahit.sijahit.R
 import id.kel3.sijahit.sijahit.admin.AdminHomeActivity
-import id.kel3.sijahit.sijahit.user.UserHomeActivity
+
 
 class LoginActivity : AppCompatActivity() {
 

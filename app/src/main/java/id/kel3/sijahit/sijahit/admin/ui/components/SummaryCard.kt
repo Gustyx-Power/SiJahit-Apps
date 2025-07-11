@@ -1,4 +1,4 @@
-package id.kel3.sijahit.sijahit.admin.ui
+package id.kel3.sijahit.sijahit.admin.ui.components
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box

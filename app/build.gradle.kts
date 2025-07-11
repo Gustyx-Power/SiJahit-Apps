@@ -62,8 +62,13 @@ dependencies {
     implementation(platform(libs.compose.bom))
     implementation(libs.androidx.foundation.android)
     implementation(libs.material.icons.extended)
+    implementation(libs.firebase.storage.ktx)
+    implementation(libs.coil.compose)
+    implementation(libs.gson)
     testImplementation(libs.junit)
     debugImplementation(libs.androidx.ui.tooling)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
+    implementation(libs.zxing.core)
+
 }
