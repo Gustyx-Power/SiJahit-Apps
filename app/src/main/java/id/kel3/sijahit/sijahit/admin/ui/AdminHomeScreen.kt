@@ -1,51 +1,29 @@
 package id.kel3.sijahit.sijahit.admin.ui
 
-import androidx.compose.foundation.layout.padding
-import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.filled.*
-import androidx.compose.material3.*
-import androidx.compose.runtime.*
-import androidx.compose.ui.Modifier
+import androidx.compose.runtime.Composable
+import androidx.lifecycle.viewmodel.compose.viewModel
+import id.kel3.sijahit.sijahit.admin.viewmodel.AdminHomeViewModel
+import androidx.compose.runtime.collectAsState
 
 @Composable
-fun AdminHomeScreen() {
-    var currentIndex by remember { mutableStateOf(0) }
+fun AdminHomeScreen(viewModel: AdminHomeViewModel = viewModel()) {
+    val saldo = viewModel.saldo.collectAsState().value
+    val pesananAktif = viewModel.pesananAktif.collectAsState().value
+    val stokMenipis = viewModel.stokMenipis.collectAsState().value
+    val konfirmasi = viewModel.konfirmasi.collectAsState().value
+    val admin = viewModel.adminCount.collectAsState().value
+    val selesai = viewModel.pesananSelesai.collectAsState().value
+    val produk = viewModel.totalProduk.collectAsState().value
+    val pelanggan = viewModel.pelanggan.collectAsState().value
 
-    Scaffold(
-        bottomBar = {
-            NavigationBar {
-                NavigationBarItem(
-                    selected = currentIndex == 0,
-                    onClick = { currentIndex = 0 },
-                    icon = { Icon(Icons.Default.Home, contentDescription = "Home") },
-                    label = { Text("Beranda") }
-                )
-                NavigationBarItem(
-                    selected = currentIndex == 1,
-                    onClick = { currentIndex = 1 },
-                    icon = { Icon(Icons.Default.List, contentDescription = "Pesanan") },
-                    label = { Text("Pesanan") }
-                )
-                NavigationBarItem(
-                    selected = currentIndex == 2,
-                    onClick = { currentIndex = 2 },
-                    icon = { Icon(Icons.Default.ShoppingCart, contentDescription = "Stok") },
-                    label = { Text("Stok") }
-                )
-                NavigationBarItem(
-                    selected = currentIndex == 3,
-                    onClick = { currentIndex = 3 },
-                    icon = { Icon(Icons.Default.Person, contentDescription = "Profil") },
-                    label = { Text("Profil") }
-                )
-            }
-        }
-    ) { padding ->
-        when (currentIndex) {
-            0 -> AdminDashboardScreen(modifier = Modifier.padding(padding))
-            1 -> AdminOrdersScreen(modifier = Modifier.padding(padding))
-            2 -> AdminStockScreen(modifier = Modifier.padding(padding))
-            3 -> AdminProfileScreen(modifier = Modifier.padding(padding))
-        }
-    }
+    AdminDashboardScreen(
+        saldo = saldo,
+        pesananAktif = pesananAktif,
+        stokMenipis = stokMenipis,
+        konfirmasiMenunggu = konfirmasi,
+        adminCount = admin,
+        pesananSelesai = selesai,
+        totalProduk = produk,
+        pelanggan = pelanggan
+    )
 }
