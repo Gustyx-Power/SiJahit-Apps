@@ -125,7 +125,7 @@ fun FormInputPesananScreen(navController: NavController) {
                         "deskripsi" to deskripsi,
                         "jenisKain" to jenisKain,
                         "status" to "Menunggu",
-                        "total" to 0,
+                        "total" to 200_000,
                         "timestamp" to System.currentTimeMillis(),
                         "ukuran" to ukuran
                     )

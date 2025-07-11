@@ -1,0 +1,76 @@
+{
+  "adminDashboard": {
+    "konfirmasi": 0,
+    "pesananAktif": 0,
+    "saldo": 0,
+    "stokMenipis": 0
+  },
+  "pesanan": {
+    "order001": {
+      "id": "order001",
+      "namaUser": "Chandra",
+      "jenisPesanan": "Abaya",
+      "jenisKain": "Katun",
+      "status": "Selesai",
+      "timestamp": 1752148678,
+      "total": 250000,
+      "ukuran": {
+        "panjangBadan": 130,
+        "lebarBadan": 40,
+        "lebarPinggang": 38,
+        "lebarPinggul": 42,
+        "lebarLengan": 18,
+        "panjangLengan": 55
+      }
+    },
+    "order002": {
+      "id": "order002",
+      "namaUser": "Gilang",
+      "jenisPesanan": "Tunik",
+      "jenisKain": "Sifon",
+      "status": "Selesai",
+      "timestamp": 1752148679,
+      "total": 44000,
+      "ukuran": {
+        "panjangBadan": 120,
+        "lebarBadan": 36,
+        "lebarPinggang": 34,
+        "lebarPinggul": 40,
+        "lebarLengan": 16,
+        "panjangLengan": 52
+      }
+    },
+    "order003": {
+      "id": "order003",
+      "namaUser": "Akrom",
+      "jenisPesanan": "Gamis",
+      "jenisKain": "Rayon",
+      "status": "Selesai",
+      "timestamp": 1752148690,
+      "total": 38000,
+      "ukuran": {
+        "panjangBadan": 135,
+        "lebarBadan": 42,
+        "lebarPinggang": 40,
+        "lebarPinggul": 45,
+        "lebarLengan": 20,
+        "panjangLengan": 58
+      }
+    }
+  },
+  "promosi": [
+    null,
+    {
+      "gambar": "https://example.com/promo1.jpg",
+      "judul": "Diskon 20% Semua Produk"
+    },
+    {
+      "gambar": "https://example.com/promo2.jpg",
+      "judul": "Gratis Ongkir Minggu Ini!"
+    }
+  ],
+  "roles": {
+    "dinisitimasluhah19_gmail_com": "admin",
+    "gustiadityamuzaky08_gmail_com": "admin"
+  }
+}

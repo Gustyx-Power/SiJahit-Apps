@@ -135,6 +135,16 @@ fun FormPesananUserScreen(navController: NavController) {
                 }
             }
 
+            val total = when (selectedJenisPesanan) {
+                "Jahit Baru" -> 125_000
+                "Permak" -> 40_000
+                "Custom Model" -> 250_000
+                else -> 65_000
+            }.let { base ->
+                val panjang = panjangBadan.toIntOrNull() ?: 0
+                if (panjang > 150) base + 20_000 else base
+            }
+
             Button(
                 onClick = {
                     val panjangBadanInt = panjangBadan.toIntOrNull()
@@ -161,6 +171,8 @@ fun FormPesananUserScreen(navController: NavController) {
                             "jenisPesanan" to selectedJenisPesanan,
                             "jenisKain" to jenisKain,
                             "status" to "Menunggu",
+                            "timestamp" to System.currentTimeMillis(),
+                            "total" to total,
                             "ukuran" to mapOf(
                                 "panjangBadan" to panjangBadanInt,
                                 "lebarBadan" to lebarBadanInt,
